@@ -13,6 +13,7 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/(?:^|\.)vimeocdn\.com$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)themeforest\.net$/.test(host)) return "+Shadowsocks";
+        if (/(?:^|\.)vnet\.link$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)amazonaws\.com$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)speedtest\.net$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)travis-ci\.org$/.test(host)) return "+Shadowsocks";
