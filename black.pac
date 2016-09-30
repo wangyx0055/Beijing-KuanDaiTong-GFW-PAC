@@ -12,6 +12,7 @@ var FindProxyForURL = function(init, profiles) {
     "+Black list": function(url, host, scheme) {
         "use strict";
         if (/(?:^|\.)vimeocdn\.com$/.test(host)) return "+Shadowsocks";
+        if (/(?:^|\.)disquscdn.com$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)themeforest\.net$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)vnet\.link$/.test(host)) return "+Shadowsocks";
         if (/(?:^|\.)amazonaws\.com$/.test(host)) return "+Shadowsocks";
